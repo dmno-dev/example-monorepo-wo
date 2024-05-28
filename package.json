@@ -6,7 +6,8 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "dev": "concurrently \"npm:dev -w api-express\" \"npm:dev -w web-astro\""
+    "dev": "concurrently \"npm:dev -w api-express\" \"npm:dev -w web-astro\"",
+    "reset": "git checkout -- . && git clean -f -d"
   },
   "workspaces": [
     "apps/*"
